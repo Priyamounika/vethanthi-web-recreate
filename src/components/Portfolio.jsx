@@ -21,7 +21,6 @@ const Portfolio = () => {
     {
       title: "E-Commerce Platform",
       category: "E-Commerce",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
       image: "/images/discuss2.jpeg",
       link: "#",
       description: "Modern e-commerce solution with payment integration"
@@ -29,7 +28,6 @@ const Portfolio = () => {
     {
       title: "Healthcare Management",
       category: "Healthcare",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop",
       image: "/images/discuss1.jpeg",
       link: "#",
       description: "Comprehensive healthcare management system"
