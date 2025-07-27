@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-// If you want to use parallax, you can import a library or use CSS for now
 
 const benefits = [
   {
@@ -45,26 +44,21 @@ const process = [
 ];
 
 const positions = [
-  { title: 'Software Engineer – PHP', open: 2 },
-  { title: 'Software Engineer – Android', open: 4 },
-  { title: 'Software Engineer – Java', open: 1 },
-  { title: 'Software Engineer – Dot Net', open: 3 },
+  { title: 'Software Engineer - PHP', open: 2 },
+  { title: 'Software Engineer - Android', open: 4 },
+  { title: 'Software Engineer - Java', open: 1 },
+  { title: 'Software Engineer - Dot Net', open: 3 },
   { title: 'React.Js Developer', open: 6 },
-  { title: 'Software Engineer – Tester', open: 2 },
+  { title: 'Software Engineer - Tester', open: 2 },
   { title: 'IOS Developer', open: 3 },
   { title: 'Business Development', open: 1 },
   { title: 'Business Analyst', open: 2 },
 ];
 
-const testimonials = [
-  { name: 'Priya S.', quote: 'Vedhanthi Technologies gave me the platform to grow and innovate every day.', img: '/images/discuss-img.jpg' },
-  { name: 'Arun K.', quote: 'The team culture is amazing and the projects are always exciting.', img: '/images/discuss2.jpeg' },
-  { name: 'Meena R.', quote: 'I love the flexibility and the opportunities to learn new skills.', img: '/images/discuss1.jpeg' },
-];
 
 const Career = () => (
   <section className="bg-white min-h-screen pt-24 pb-12 overflow-x-hidden container mx-auto">
-    {/* 1. Hero Section with Parallax BG */}
+    {/* 1. Hero */}
     <div className="rounded-xl relative w-full h-[60vh] flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-400 overflow-hidden mb-20">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -84,7 +78,7 @@ const Career = () => (
           <ArrowRight className="w-5 h-5" />
         </motion.a>
       </motion.div>
-      {/* Parallax shapes */}
+      {/* Parallax */}
       <motion.div
         className="absolute top-0 left-0 w-full h-full z-0"
         initial={{ opacity: 0 }}
@@ -94,10 +88,10 @@ const Career = () => (
       />
     </div>
 
-    {/* 2. Life at Vedhanthi (About) */}
+    {/* 2. Life */}
     <div className="container mx-auto px-4 mb-16 md:mb-20">
       <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
-        {/* Left - Content */}
+        {/* Left */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -108,7 +102,7 @@ const Career = () => (
           <h2 className="text-4xl text-gray-900 mb-6 font-serif">Better Together, Grow Together</h2>
           <p className="text-gray-600 text-[15px] leading-relaxed mb-4">It is a dream to do paintings with Vedhanthi Technologies. The culture, the paintings of ecosystem will be very excellent and appropriate for each employee. We deal with our personnel like property of the company.</p>
         </motion.div>
-        {/* Right - Animated Image Grid */}
+        {/* Right */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -124,7 +118,7 @@ const Career = () => (
       </div>
     </div>
 
-     {/* 4. Hiring Process (Stepper/Timeline) */}
+     {/* 4. Hiring*/}
      <div className="container mx-auto px-4 mb-16 md:mb-20">
       <h2 className="text-3xl font-bold text-center mb-12">Our Hiring Process</h2>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
@@ -149,7 +143,7 @@ const Career = () => (
     </div>
 
 
-    {/* 3. Benefits Section (Hover Cards with BG Image) */}
+    {/* 3. card*/}
     <div className="container mx-auto px-4 mb-24">
       <h2 className="text-xl text-blue-500 uppercase font-semibold text-center mb-12">Benefits Of Working With Vedhanthi Technologies</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -176,9 +170,9 @@ const Career = () => (
     </div>
 
    
-    {/* 5. Open Positions (Hover Cards with Parallax) */}
+    {/* 5. Position*/}
     <div className="container mx-auto px-4 mb-24">
-      <h2 className="text-3xl font-bold text-center mb-12">We’re Currently Hiring</h2>
+      <h2 className="text-3xl font-bold text-center mb-12">We&apos;re Currently Hiring</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-8">
         {positions.map((pos, idx) => (
           <motion.div
@@ -194,7 +188,7 @@ const Career = () => (
               <h3 className="text-xl font-bold mb-2 group-hover:text-black transition-colors duration-300">{pos.title}</h3>
               <p className="text-[15px] text-gray-600 group-hover:text-black transition-colors duration-300">{pos.open} Open Roles</p>
             </div>
-            {/* Parallax BG Image (placeholder) */}
+            {/* BG Image */}
             <div className="absolute inset-0 z-0 opacity-0  group-hover:opacity-80 transition-opacity duration-500" />
             <div className="absolute inset-0 z-0 bg-gradient-to-br  opacity-0  transition-opacity duration-500" />
           </motion.div>
@@ -203,7 +197,7 @@ const Career = () => (
     </div>
 
 
-    {/* 7. Growth Opportunities Banner (Parallax) */}
+    {/* Banner (Parallax) */}
     <div className="rounded-xl relative w-full h-[40vh] flex items-center justify-center bg-gradient-to-br from-gray-500 to-gray-400 overflow-hidden mb-16">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -223,7 +217,7 @@ const Career = () => (
       />
     </div>
 
-    {/* 8. Contact/Join Us CTA */}
+    {/* Contact*/}
     <div className="container mx-auto px-4">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
