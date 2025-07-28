@@ -16,11 +16,7 @@ const navItems = [
   // { name: 'About', href: '#about' },
   { name: 'Services', isDropdown: true },
   { name: 'Digital Marketing', href: '/digital-marketing', isPage: true },
-  // { name: 'Career', href: '/career' },
-  { name: 'Career', href: '#career', isSection: true },
-  // { name: 'Testimonials', href: '#testimonials' },
-  // { name: 'Blog', href: '#blog' },
-  // { name: 'Video', href: '#video' },
+  { name: 'Career', href: '/career', isCareer: true },
   { name: 'Contact', href: '/contact', isContact: true },
 ];
 
@@ -31,7 +27,7 @@ const Header = () => {
   const location = useLocation();
 
   useEffect(() => {
-    setIsMenuOpen(false); // Close menu on route change
+    setIsMenuOpen(false); // Close menu 
     setServicesOpen(false);
   }, [location]);
 
@@ -47,12 +43,17 @@ const Header = () => {
   const renderNavItem = (item, index) => {
     if (item.isContact) {
       return (
-        <Link key={item.name} to={item.href} className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-white hover:text-blue-300'}`}>{item.name}</Link>
+        <Link key={item.name} to={item.href} className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-black hover:text-blue-300'}`}>{item.name}</Link>
       );
     }
     if (item.isPage) {
       return (
-        <Link key={item.name} to={item.href} className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-white hover:text-blue-300'}`}>{item.name}</Link>
+        <Link key={item.name} to={item.href} className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-black hover:text-blue-300'}`}>{item.name}</Link>
+      );
+    }
+    if (item.isCareer) {
+      return (
+        <Link key={item.name} to={item.href} className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-black hover:text-blue-300'}`}>{item.name}</Link>
       );
     }
     if (item.isDropdown) {
@@ -64,7 +65,7 @@ const Header = () => {
           onMouseLeave={() => setServicesOpen(false)}
         >
           <button
-            className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-white hover:text-blue-300'}`}
+            className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-black hover:text-blue-300'}`}
             aria-haspopup="true"
             aria-expanded={servicesOpen}
             type="button"
@@ -106,7 +107,7 @@ const Header = () => {
         key={item.name}
         href={item.href}
         whileHover={{ y: -2 }}
-        className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-white hover:text-blue-300'}`}
+        className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-black hover:text-blue-300'}`}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: index * 0.1 }}
