@@ -57,7 +57,8 @@ const positions = [
 
 
 const Career = () => (
-  <section className="bg-white min-h-screen pt-24 pb-12 overflow-x-hidden container mx-auto">
+  // <section className="bg-white min-h-screen pt-24 pb-12 overflow-x-hidden container mx-auto">
+  <section id="career" className="bg-white py-24 overflow-x-hidden container mx-auto">
     {/* 1. Hero */}
     <div className="rounded-xl relative w-full h-[60vh] flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-400 overflow-hidden mb-20">
       <motion.div
