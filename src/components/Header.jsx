@@ -182,7 +182,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <motion.div whileHover={{ scale: 1.05 }} className="flex-shrink-0">
+          {/* <motion.div whileHover={{ scale: 1.05 }} className="flex-shrink-0"> */}
             <Link to="/" className="flex items-center">
             <img
     src={"/images/logo.jpeg"}
@@ -190,7 +190,7 @@ const Header = () => {
     className="absolute inset-0 w-[80px]  lg:w-[130px] h-auto md:h-full object-cover"
   />
             </Link>
-          </motion.div>
+          {/* </motion.div> */}
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
